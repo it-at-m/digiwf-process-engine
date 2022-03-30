@@ -1,0 +1,23 @@
+server.port: 8080
+
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/digiwf-process-engine
+    username: postgres
+    password: password
+    driver-class-name: org.postgresql.Driver
+
+camunda.bpm:
+  admin-user:
+    id: demo
+    password: demo
+    firstName: Demo
+    lastName: Demo
+  filter:
+    create: All Tasks
+  job-execution:
+    max-wait: 10000
+
+logging:
+  level:
+    pro.taskana: DEBUG
