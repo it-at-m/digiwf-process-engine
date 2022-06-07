@@ -57,8 +57,22 @@ If you need to change some settings. Look in the ``application.yml`` file under 
 
 ## Documentation
 
-*what insights do you have to tell*
+To set up the demo process engine. Create a list of environment variables and fill them with the necessary data.  
+A list of them and with example data you can find here:
+```
+CAMUNDA_DB_HOST=localhost
+CAMUNDA_DB_PORT=5432
+CAMUNDA_DB_NAME=digiwf-process-engine
+CAMUNDA_DB_USER=postgres
+CAMUNDA_DB_PASSWORD=password
+CAMUNDA_ADMIN_USERNAME=demo
+CAMUNDA_ADMIN_PASSWORD=demo
+CAMUNDA_ADMIN_FIRSTNAME=Demo
+CAMUNDA_ADMIN_LASTNAME=Demo
+```
 
+You can create this variables in a `.env` file. For *nix users add before every line `export` and add a space. For windows user add a `set ` for every line.  
+*nix user can then do `source .env` to load the environment variables.
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 <!-- CONTRIBUTING -->

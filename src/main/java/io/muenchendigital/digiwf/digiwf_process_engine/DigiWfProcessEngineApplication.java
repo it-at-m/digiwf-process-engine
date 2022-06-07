@@ -13,9 +13,4 @@ public class DigiWfProcessEngineApplication {
         SpringApplication.run(DigiWfProcessEngineApplication.class, args);
     }
 
-    @Bean
-    @ConditionalOnMissingBean
-    public TaskanaParseListenerProcessEnginePlugin taskanaParseListenerProcessEnginePlugin() {
-        return new TaskanaParseListenerProcessEnginePlugin();
-    }
 }

@@ -31,3 +31,9 @@ build/
 
 ### VS Code ###
 .vscode/
+
+### If you use jenv for using different java-version on your computer ###
+.java-version
+
+### Handling the environment variables ###
+.env

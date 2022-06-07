@@ -83,6 +83,16 @@
             <artifactId>taskana-adapter-camunda-listener</artifactId>
             <version>1.11.0</version>
         </dependency>
+        <dependency>
+            <groupId>pro.taskana</groupId>
+            <artifactId>taskana-adapter-camunda-outbox-rest-spring-boot-starter</artifactId>
+            <version>1.11.0</version>
+        </dependency>
+        <dependency>
+            <groupId>org.jboss.resteasy</groupId>
+            <artifactId>resteasy-spring-boot-starter</artifactId>
+            <version>5.0.0.Final</version>
+        </dependency>
     </dependencies>
 
     <repositories>

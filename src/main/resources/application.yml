@@ -1,18 +1,18 @@
-server.port: 8080
+server.port: 8090 # is for local dev necessary
 
 spring:
   datasource:
-    url: jdbc:postgresql://localhost:5432/digiwf-process-engine
-    username: postgres
-    password: password
+    url: jdbc:postgresql://${CAMUNDA_DB_HOST}:${CAMUNDA_DB_PORT:5432}/${CAMUNDA_DB_NAME}
+    username: ${CAMUNDA_DB_USER}
+    password: ${CAMUNDA_DB_PASSWORD}
     driver-class-name: org.postgresql.Driver
 
 camunda.bpm:
   admin-user:
-    id: demo
-    password: demo
-    firstName: Demo
-    lastName: Demo
+    id: ${CAMUNDA_ADMIN_USERNAME}
+    password: ${CAMUNDA_ADMIN_PASSWORD}
+    firstName: ${CAMUNDA_ADMIN_FIRSTNAME}
+    lastName: ${CAMUNDA_ADMIN_LASTNAME}
   filter:
     create: All Tasks
   job-execution:
@@ -20,4 +20,4 @@ camunda.bpm:
 
 logging:
   level:
-    pro.taskana: DEBUG
+    pro.taskana: INFO
