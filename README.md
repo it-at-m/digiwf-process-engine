@@ -49,7 +49,7 @@ Start via mvn:
 ``./mvnw spring-boot:run``
 
 You should now see in your browser the camunda login.   
-Use the URL ``http://localhost:8080``  
+Use the URL ``http://localhost:8090``  
 
 If you need to change some settings. Look in the ``application.yml`` file under ``src/main/resources``
 
